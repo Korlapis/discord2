@@ -1,0 +1,168 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Use a sans-serif font similar to Discord */
+    margin: 0;
+    padding: 0;
+    background-color: #36393F; /* Discord's dark background */
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2F3136; /* Darker header */
+}
+
+.logo h1 {
+    color: white;
+    margin: 0;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+#hero {
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #2F3136, #36393F); /* Gradient background */
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+.button {
+    background-color: #5865F2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#features {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature {
+    background-color: #2F3136;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2F3136;
+}
+
+
+
+
+
+
+
+
+#hero {
+    background: linear-gradient(to bottom, #5865F2, #4457FF); /* Discord-like gradient */
+    color: white;
+    padding: 150px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden; /* Prevents image overflow */
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 500px; /* Limit the width of the text content */
+}
+
+
+.hero-image {
+    max-width: 40%;
+    height: auto;
+    animation: slideIn 1s ease-in-out forwards; /* Add slide-in animation */
+}
+
+
+/* Feature Grid Styles */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+.feature {
+    background-color: #36393F;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add subtle shadow */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.feature:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.feature img {
+    max-width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+
+/* Testimonials Styles */
+#testimonials {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.testimonial {
+    background-color: #36393F;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.show {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.feature {
+    /* ... existing styles ... */
+    perspective: 1000px; /* Enable 3D transforms */
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px) rotateY(5deg); /* Add rotation on hover */
+}
